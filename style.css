@@ -1,0 +1,366 @@
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0px;
+}
+
+h2 {
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    font-size: 30pt;
+    padding-top: 10%;
+    border-bottom: 4px rgb(40, 40, 170) solid;
+    width: fit-content
+}
+
+.welcome {
+    height: 98%;
+    width: 100%;
+    padding-top: 2%;
+    background-color: lightsteelblue;
+}
+
+.profile-image {
+    display: flex;
+    width: 45vh; 
+    height: 45vh; 
+    object-fit: cover;
+    border-radius: 50%;
+    margin-bottom: 2%;
+    margin-left: auto;
+    margin-right: auto;
+    border: 3px white solid
+}
+
+.greeting {
+    text-align: center;
+    font-size: 40pt;
+    background: -webkit-linear-gradient(rgb(40, 40, 170),  rgb(170, 40, 40));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.jump-button {
+    display: flexbox;
+    text-align: center;
+    font-size: 35pt;
+    color: aliceblue;
+    background-color: rgb(40, 40, 170);
+    margin-left: auto;
+    margin-right: auto;
+    width: 65px;
+    height: 65px;
+    line-height: 65px;
+    border-radius: 50%;
+    margin-top: 8%;
+}
+
+.jump-button a {
+    color: white;
+    text-decoration: none;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+.timeline {
+    position: relative;
+    max-width: 100%;
+    margin: 0 auto;
+  }
+  
+  /* The actual timeline (the vertical ruler) */
+  .timeline::after {
+    content: '';
+    position: absolute;
+    width: 6px;
+    background-color: black;
+    top: 0;
+    bottom: 0;
+    left: 50%;
+    margin-left: -3px;
+  }
+
+  .container {
+      margin: 1%;
+      padding: 1%;
+      height: auto;
+      width: 30%;
+      background-color: rgb(40, 40, 170);
+      color: white;
+  }
+
+  .container::after {
+    content: '';
+    position: absolute;
+    width: 25px;
+    height: 25px;
+    right: calc(-13% - 13.5px);
+    background-color: white;
+    border: 4px solid #666666;
+    top: 15px;
+    border-radius: 50%;
+    z-index: 1;
+  }
+
+  .left {
+    position: relative;
+    background-color: rgb(170, 40, 40);
+    left: 13%
+  }
+
+  .right {
+    position: relative;
+    background-color: rgb(40, 40, 170);
+    left: 53%
+  }
+
+  /* Fix the circle for containers on the right side */
+  .right::after {
+    left: calc(-13% - 13.5px);
+  }
+
+  .tag-panel {
+      margin: 5%
+  }
+
+  .panel-header {
+      font-size: 18pt;
+  }
+
+  .panel {
+      display: flex;
+      width: 75%;
+  }
+
+  .tag {
+      padding: 1.5%;
+      margin: 1%;
+      width: fit-content;
+      border-radius: 6%;
+      font-size: 13pt;
+  }
+
+  ul {
+	list-style: none;
+  }
+
+  li::before { 
+    content: "";
+    border-color: transparent rgb(40, 40, 170);
+    border-style: solid;
+    border-width: 0.35em 0 0.35em 0.45em;
+    display: block;
+    height: 0;
+    width: 0;
+    left: -1em;
+    top: 0.9em;
+    position: relative;
+  }
+
+  .project {
+      width: 30vw;
+      height: fit-content;
+      margin: 2%;
+      padding: 1%;
+      border: lightgray solid;
+  }
+
+  .project-image {
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+    width: 28vw; 
+    height: 18vw; 
+    object-fit: cover;
+  }
+
+  .project-panel {
+    display: flex;
+    justify-content: center;
+  }
+
+  .link-icon{
+    display: flex;
+    width: 40pt; 
+    height: 40pt; 
+    object-fit: contain;
+  }
+
+  .link-to-vcs {
+      display: flex;
+      justify-content: center;
+      font-size: 16pt;
+      margin: 1%;
+  }
+
+
+  .link-to-vcs p{
+    margin-block-end: 0;
+    margin-block-start: 5pt;
+    margin-left: 5pt;
+}
+
+#menuToggle
+{
+  display: block;
+  position: absolute;
+  top: 50px;
+  left: 50px;
+  
+  z-index: 1;
+  
+  -webkit-user-select: none;
+  user-select: none;
+}
+
+#menuToggle a
+{
+  text-decoration: none;
+  color: white;
+  
+  transition: color 0.3s ease;
+}
+
+#menuToggle a:hover
+{
+  color: rgb(170, 40, 40);
+}
+
+
+#menuToggle input
+{
+  display: block;
+  width: 40px;
+  height: 32px;
+  position: absolute;
+  top: -7px;
+  left: -5px;
+  
+  cursor: pointer;
+  
+  opacity: 0; /* hide this */
+  z-index: 2; /* and place it over the hamburger */
+  
+  -webkit-touch-callout: none;
+}
+
+/*
+ * Just a quick hamburger
+ */
+#menuToggle span
+{
+  display: block;
+  width: 33px;
+  height: 4px;
+  margin-bottom: 5px;
+  position: relative;
+  
+  background: #cdcdcd;
+  border-radius: 3px;
+  
+  z-index: 1;
+  
+  transform-origin: 4px 0px;
+  
+  transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
+              background 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
+              opacity 0.55s ease;
+}
+
+#menuToggle span:first-child
+{
+  transform-origin: 0% 0%;
+}
+
+#menuToggle span:nth-last-child(2)
+{
+  transform-origin: 0% 100%;
+}
+
+/* 
+ * Transform all the slices of hamburger
+ * into a crossmark.
+ */
+#menuToggle input:checked ~ span
+{
+  opacity: 1;
+  transform: rotate(45deg) translate(-2px, -1px);
+  background: white;
+}
+
+/*
+ * But let's hide the middle one.
+ */
+#menuToggle input:checked ~ span:nth-last-child(3)
+{
+  opacity: 0;
+  transform: rotate(0deg) scale(0.2, 0.2);
+}
+
+/*
+ * Ohyeah and the last one should go the other direction
+ */
+#menuToggle input:checked ~ span:nth-last-child(2)
+{
+  transform: rotate(-45deg) translate(0, -1px);
+}
+
+/*
+ * Make this absolute positioned
+ * at the top left of the screen
+ */
+#menu
+{
+  position: absolute;
+  height: calc(100vh + 40px);
+  width: 100vw;
+  margin: -100px 0 0 -50px;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  flex-direction: column;
+  
+  background: rgb(40, 40, 170);
+  list-style-type: none;
+  -webkit-font-smoothing: antialiased;
+  
+  transform-origin: 0% 0%;
+  transform: translate(-100%, 0);
+  
+  transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0);
+}
+
+#menu li
+{
+  padding: 10px 0;
+  font-size: 25pt;
+}
+
+#menu li::before
+{
+    content: none;
+}
+
+
+#menu ul
+{
+    list-style: none;
+}
+
+/*
+ * And let's slide it in from the left
+ */
+#menuToggle input:checked ~ ul
+{
+  transform: none;
+}
+
+.page {
+    height: 100%;
+    display: flexbox;
+    justify-content: center;
+    flex-direction: column;
+}

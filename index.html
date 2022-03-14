@@ -1,0 +1,192 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="preconnect" href="https://fonts.googleapis.com"> 
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+    <title>Portfolio Hannah Boinowitz</title>
+</head>
+<body>
+    <nav role="navigation">
+        <div id="menuToggle">
+          <input id="check" type="checkbox" />
+          
+          <span></span>
+          <span></span>
+          <span></span>
+
+          <ul id="menu">
+            <a href="#" onclick="close_hamburger()"><li>Home</li></a>
+            <a href="#about" onclick="close_hamburger()"><li>About</li></a>
+            <a href="#cv" onclick="close_hamburger()"><li>Curriculum Vitae</li></a>
+            <a href="#projects" onclick="close_hamburger()"><li>Projects</li></a>
+            <a href="#contact" onclick="close_hamburger()"><li>Contact</li></a>
+          </ul>
+        </div>
+      </nav>
+    <div class="welcome">
+        <div><img class="profile-image" src="profile.jpg"></div>
+        <h1 class="greeting">
+            Hi, I'm Hannah!
+        </h1>
+        <p style="text-align: center; font-size: 15pt;">Data Science Student from Braunschweig, Germany</p>
+        <div class="jump-button">
+            <a href="#about">▽</a>
+        </div>
+    </div>
+    <div class="page">
+        <h2 id="about">About Me</h2>
+        <div class="tag-panel">
+            <p style="font-size: 16pt;"> My name is <b>Hannah Boinowitz</b>. I'm a graduate student of Data Science at the TU Braunschweig. I previously studied Physics with a minor in Computer Science at the same university.<br>
+            I enjoy coding a lot and would definitely consider it one of my hobbies.<br>
+            When I was still in high-school I've taught myself some Python fundamentals. Ever since I was hooked by the idea that I can use a computer for my needs and praticed to get better at it.<br>
+            In the last years, espcially during my universtiy studies, I have gained some expericence when it comes to coding in scientific contents. Two interships in the software industry and my working student job in Data Science have helped me to gain additional hands-on software engenering skills in industrial settings. 
+            </p>
+        </div>
+    </div>
+    <div class="page">
+    <h2 id="cv" style="padding-top: 5%;">Curriculum Vitae</h2>
+    <div class="timeline">
+        <div class="container right">
+            <div class="content">
+              <h3>MSc Data Science</h3>
+              <p>Technical University Braunschweig<br>Since 04/2022</p>
+            </div>
+          </div>
+        <div class="container left">
+            <h3>Working Student in Data Science</h3>
+            <div class="content">
+                <p>New Yorker<br>Since 04/2021</p>
+            </div>
+        </div>
+        <div class="container right">
+          <h3>BSc Physics</h3>
+          <div class="content">
+            <p>Technical University Braunschweig<br>10/2018 - 04/2022</p>
+          </div>
+        </div>
+        <div class="container right">
+            <h3>Abitur</h3>
+            <div class="content">
+              <p>Aue-Geest-Gynasium Harsefeld<br>07/2018</p>
+            </div>
+          </div>
+      </div>
+      </div>
+      <div class="page">
+        <h2>Technologies</h2>
+        <div class="tag-panel">
+          <p style="font-size: 16pt;"> In my university studies, various side projects and my work at New Yorker I have used and got to know multiple different tools to solve problems in the data world.</p>
+          <h3 class="panel-header">Programming Laguages</h3>
+          <div class="panel">
+              <div class='tag', style="background-color: yellowgreen;">Python</div>
+              <div class='tag', style="background-color: lightblue;">Matlab</div>
+              <div class='tag', style="background-color: rgb(244, 182, 255);">Julia</div>
+              <div class='tag', style="background-color: lightpink;">Java</div>
+              <div class='tag', style="background-color: lightcoral;">JS/CSS/HTML</div>
+              <div class='tag', style="background-color: lightcoral;">PHP</div>
+          </div>
+          <h3 class="panel-header">Python-Packages</h3>
+          <div class="panel">
+              <div class='tag', style="background-color: rgb(219, 219, 86);">Flask</div>
+              <div class='tag', style="background-color: lightblue;">Streamlit</div>
+              <div class='tag', style="background-color: lightseagreen">Pandas</div>
+              <div class='tag', style="background-color: lightsteelblue;">Spark</div>
+              <div class='tag', style="background-color: lightcyan;">Matplotlib</div>
+              <div class='tag', style="background-color: lightcoral;">Plotly</div>
+              <div class='tag', style="background-color: lightgreen;">Scikit-Learn</div><br>
+          </div>
+          <div class="panel">
+              <div class='tag', style="background-color: lightgray">Tensorflow</div>
+              <div class='tag', style="background-color: lightgoldenrodyellow;">Pytest</div>
+          </div>
+          <h3 class="panel-header">Development-Tools</h3>
+          <div class="panel">
+              <div class='tag', style="background-color: lightcoral;">Jenkins</div>
+              <div class='tag', style="background-color: lightgreen;">k8s</div>
+              <div class='tag', style="background-color: rgb(219, 219, 86);">Git</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="page">
+        <h2>My Interests</h2>
+        <div class="tag-panel">
+          <p style="font-size: 16pt;">My background in Physics and my working student job have given my the opportunity to try out and see different things and specialize on the concepts that interest me the most. Amongst these are</p>
+          <ul style="font-size: 16pt;">
+              <li>Timeseries Analysis</li>
+              <li>Usage of ML in Physics/Engineering</li>
+              <li>Application of ML instead of established numerical methods or support of such numerical methods with ML</li>
+              <li>ML infrastructure (CI/CD, k8s-Deployment)</li>
+          </ul>
+  
+        </div>
+      </div>
+
+      <h2 id="projects">Some of my Projects</h2>
+      <div class="tag-panel">
+          <div class="project-panel">
+            <a class="project" href="https://github.com/boinowitzh/wordle-analysis">
+                <div>
+                <img class="project-image" src="wordle.png">
+                <h3>Wordle-Simulation</h3>
+                Simulation and Analysis of the NY Times Wordle word-guessing game
+                <div class="panel" style="padding-top:3%">
+                    <div class='tag', style="background-color: yellowgreen;">Python</div>
+                    <div class='tag', style="background-color: rgb(219, 219, 86);">Flask</div>
+                </div>
+             </div>
+             </a>
+             <a class="project" href="https://gitlab.com/h_boinowitz/bachelorarbeit">
+             <div>
+                <img class="project-image" src="ice_content_estimation.png">
+                <h3>Ice Content Estimation from High-Frequency SIP-Data</h3>
+                My Bachelor's thesis on ice content estimation in permafrost soils from sepctral resitivity data 
+                <div class="panel" style="padding-top:3%">
+                  <div class='tag', style="background-color: yellowgreen;">Python</div>
+                  <div class='tag', style="background-color: lightgreen;">Scikit-Learn</div>
+                </div>
+             </div>
+             </a>
+          </div>
+          
+          <div class="project-panel">
+            <a class="project" href="https://github.com/boinowitzh/nfl-analysis">
+            <div>
+              <img class="project-image" src="nfl_analysis.png">
+              <h3>NFL-Analysis</h3>
+              Analysis of NFL- and Superbowl-data
+              <div class="panel" style="padding-top:3%">  
+                  <div class='tag', style="background-color: yellowgreen;">Python</div>
+                  <div class='tag', style="background-color: lightseagreen">Pandas</div>
+                  <div class='tag', style="background-color: lightblue;">Streamlit</div>
+              </div>
+           </div>
+        </a>
+        <a class="project" href="https://github.com/boinowitzh/symbolic-error-propagator">
+            <div >
+                <img class="project-image" src="symbolic-error-propagetor.png">
+                <h3>Symbolic-Error Propagator</h3>
+                A SymPy-based Error-Propagtor that can be used to write Lab-Reports in Physics undergrad-labs
+                <div class="panel" style="padding-top:3%">
+                    <div class='tag', style="background-color: rgb(244, 182, 255);;">Julia</div>
+                </div>
+             </div>
+        </a>
+        </div>
+        <div><h3 style="font-size: 30pt; text-align: center;">All my other Projects can be found on</h3>
+            <a href="https://gitlab.com/h_boinowitz"><div class="link-to-vcs"><img class="link-icon" src="gitlab.png"><p>@h_boinowitz</p></div></a>
+            <a href="https://github.com/boinowitzh"><div class="link-to-vcs"><img class="link-icon" src="github.png"><p>@boinowitzh</p></div></a>
+        </div>
+      </div>
+
+      <div class="page">
+      <h2 id="contact">Let's get connected</h2>
+      <a href="https://de.linkedin.com/in/hannah-boinowitz-ab2914203"><div class="link-to-vcs"><img class="link-icon" src="linkedin.png"><p>Hannah Boinowitz</p></div></a>
+      <a href="mailto:hannah.boinowitz@web.de"><div class="link-to-vcs"><img class="link-icon" style="margin-right: 10px;" src="email.png"><p style="margin-block-end:0px">hannah.boinowitz@web.de</p></div></a>
+      </div>
+</body>
+</html>
